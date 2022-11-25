@@ -1,15 +1,19 @@
-#logo {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
+
+  #logo {
+    position: relative;
+    top: 11px;
     height: 38px;
     width: 119.96px;
   }
-  .menu {
-    margin-top: 21px;
+  .mainmenu, .leftmenu, .rightmenu, .icons {
+    display: flex;
+    height: 60px;
+  }
+  .mainmenu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menu, .menu_1 {
     margin-left: 27px;
     text-decoration: none;
     color: black;
@@ -18,20 +22,24 @@
     letter-spacing: 1.7px;
     word-spacing: 36px;
   }
-  #mainmenu .menu:hover {
+
+  .leftmenu {
+    width: 500px;
+    align-items: center;
+  }
+  .rightmenu{
+    margin-right: 30px;
+    align-items: center;
+  }
+
+  .leftmenu :hover, .rightmenu :hover {
     text-decoration: underline;
     color: black;
   }
-  aside {
-    text-align: end;
-    padding-right: 22px;
-    padding-top: 21px;
-    padding-bottom: 18px;
-    font-size: 12px;
-    line-height: 21px;
-    letter-spacing: 1.7px;
-    word-spacing: 10px;
+  .icons {
+    align-items: center;
   }
+
   h2,
   h3 {
     position: absolute;
